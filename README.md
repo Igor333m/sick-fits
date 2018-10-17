@@ -1,6 +1,6 @@
 
-#Frontend & Backend
+# Frontend & Backend
 
-After git clone, run npm install in both folders
+After git clone, run **_npm install_** in both folders
 
-To run frontend part, run npm run dev
+To run *frontend* part, run **_npm run dev_**
