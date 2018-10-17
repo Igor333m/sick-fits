@@ -1,5 +1,6 @@
+# Sick Fits - Online shop
 
-# Frontend & Backend
+## Frontend & Backend
 
 After git clone, run **_npm install_** in both folders
 
