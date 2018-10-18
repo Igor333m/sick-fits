@@ -1,12 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
+import Header from './Header';
 
-export default class Page extends Component {
+class Page extends React.Component {
     render () {
         return (
             <div>
-                <p>Hey I'm the page component</p>
+                <Header />
                 {this.props.children}
             </div>
         )
     }
 }
+
+export default Page;
