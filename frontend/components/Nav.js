@@ -4,8 +4,10 @@ const Nav = () => (
     <Link href="/sell">
 			<a>Go to Sell</a>
 		</Link>
-    <Link href="/sell">
+    <Link href="/">
 			<a>Home</a>
 		</Link>
   </div>
 )
+
+export default Nav;
