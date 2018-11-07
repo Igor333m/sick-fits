@@ -1,4 +1,5 @@
 import Nav from './Nav';
+
 const Header = () => (
   <div>
     <div className="bar">
@@ -10,6 +11,6 @@ const Header = () => (
     </div>
     <div>Cart</div>
   </div>
-)
+);
 
 export default Header;
