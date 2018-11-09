@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header';
 import Meta from './Meta';
-import styled from 'styled-components';
+import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 const theme = {
 	red: '#e65c00',
@@ -15,26 +15,28 @@ const theme = {
 
 const StyledPage = styled.div`
 	background: white;
-	color: black;
+	color: ${props => props.theme.black};
 `;
 
 const Inner = styled.div`
-	max-width: 1200px;
+	max-width: ${props => props.theme.maxWidth};
+	background: ${props => props.theme.red};
 	margin: 0 auto;
 	padding: 2rem;
-	background-color: red;
 `;
 
 class Page extends React.Component {
   render() {
 		return (
+			<ThemeProvider theme={theme}>
 			 <StyledPage>
 				<Meta />
 				<Header />
 					<Inner>
 						{this.props.children}
 					</Inner>
-			</StyledPage>
+				</StyledPage>
+			</ThemeProvider>
 		)
   }
 }
